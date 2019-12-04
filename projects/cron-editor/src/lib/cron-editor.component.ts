@@ -320,8 +320,9 @@ export class CronEditorComponent implements OnInit, OnChanges {
       this.state.monthly.specificWeekDay.day = day;
 
       if (month.indexOf('/') !== -1) {
-        this.state.monthly.specificWeekDay.months = Number(month.substring(2));
-        this.state.monthly.specificWeekDay.startMonth = Number(month.split('/')[0]);
+        const [startMonth, months] = month.split('/').map(Number);
+        this.state.monthly.specificWeekDay.months = months;
+        this.state.monthly.specificWeekDay.startMonth = startMonth;
       }
 
       const parsedHours = Number(hours);
