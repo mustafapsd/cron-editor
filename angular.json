@@ -167,5 +167,8 @@
       }
     }
   },
-  "defaultProject": "cron-editor-app"
+  "defaultProject": "cron-editor-app",
+  "cli": {
+    "analytics": "a09ba529-5b16-4314-a201-555e30108c17"
+  }
 }
