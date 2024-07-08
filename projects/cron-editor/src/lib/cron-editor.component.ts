@@ -15,7 +15,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 import { distinctUntilChanged } from "rxjs";
 
 @Component({
-  selector: "cron-editor",
+  selector: "cron-editor-2",
   templateUrl: "./cron-editor.component.html",
   styleUrls: ["./cron-editor.component.css"],
   providers: [

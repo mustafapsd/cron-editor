@@ -91,11 +91,11 @@
         id="cron-editor"
         [class.active]="activeTab === 'default'"
       >
-        <cron-editor
+        <cron-editor-2
           [(cron)]="cronExpression"
           [disabled]="isCronDisabled"
           [(options)]="cronOptions"
-        ></cron-editor>
+        ></cron-editor-2>
         <hr />
         <p>The resulting Cron expression:</p>
         <div class="form-group mx-sm-3 mb-2">
@@ -114,10 +114,10 @@
       >
         <form [formGroup]="cronForm">
           <div class="form-group">
-            <cron-editor
+            <cron-editor-2
               formControlName="cron"
               [(options)]="cronOptions"
-            ></cron-editor>
+            ></cron-editor-2>
           </div>
           <hr />
           <p>The resulting Cron expression:</p>
