@@ -30,8 +30,8 @@
     "build_lib": "ng build cron-editor-2",
     "build": "ng build cron-editor-2 && ng build --prod",
     "start": "yarn run build_lib && ng serve",
-    "copy-license": "cp LICENSE.md dist\\cron-editor-2",
-    "copy-readme": "cp README.md dist\\cron-editor-2",
+    "copy-license": "cp ./LICENSE.md ./dist/cron-editor-2",
+    "copy-readme": "cp ./README.md ./dist/cron-editor-2",
     "copy-files": "npm run copy-license && npm run copy-readme",
     "pack_lib": "cd dist/cron-editor-2 && npm pack",
     "package": "npm run build_lib && npm run copy-files && npm run pack_lib"
