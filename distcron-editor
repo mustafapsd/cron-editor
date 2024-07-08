@@ -12,7 +12,7 @@ To run the app just run `npm install`, then `npm run start` and go to `http://lo
 
 ## Demo
 
-A quick demo of this app can be found [here](https://claudiuconstantin.github.io/cron-editor/).
+A quick demo of this app can be found [here](https://mustafapsd.github.io/cron-editor/).
 
 ## Sample app
 

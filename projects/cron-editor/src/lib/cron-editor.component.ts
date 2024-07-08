@@ -404,7 +404,6 @@ export class CronEditorComponent
       this.state.monthly.subTab = "specificDay";
 
       const wIndex = dayOfMonth.indexOf("W");
-      console.log(dayOfMonth);
       if (wIndex !== -1) {
         this.state.monthly.specificDay.day = dayOfMonth.split("W")[0];
         this.state.monthly.runOnWeekday = true;
