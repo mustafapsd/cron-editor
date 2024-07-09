@@ -71,7 +71,12 @@ export class CronEditorComponent
   }
 
   registerOnChange(onChange: (cronExpression: string) => void): void {
-    this.cronChange.subscribe(onChange);
+    this.cronChange.subscribe({
+      next: (cronExpression: string) => {
+        onChange(cronExpression);
+        this.validate(cronExpression);
+      },
+    });
   }
 
   registerOnTouched(onTouched: () => void): void {
