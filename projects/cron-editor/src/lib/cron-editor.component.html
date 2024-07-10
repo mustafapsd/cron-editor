@@ -116,7 +116,7 @@
                 *ngFor="let minute of selectOptions.minutes"
                 [ngValue]="minute"
               >
-                {{ minute }}
+                {{ minute | number:'2.0' }}
               </option>
             </select>
             minute(s)
@@ -133,7 +133,7 @@
                 *ngFor="let second of selectOptions.seconds"
                 [ngValue]="second"
               >
-                {{ second }}
+                {{ second | number:'2.0' }}
               </option>
             </select>
           </div>
@@ -170,7 +170,7 @@
                 *ngFor="let minute of selectOptions.fullMinutes"
                 [ngValue]="minute"
               >
-                {{ minute }}
+                {{ minute | number:'2.0' }}
               </option>
             </select>
             <span *ngIf="!options.hideSeconds">and second</span>

@@ -7,7 +7,7 @@ import {
   SimpleChanges,
   OnChanges,
 } from "@angular/core";
-import { CronOptions } from "./CronOptions";
+import { CronOptions, defaultCronOptions } from "./CronOptions";
 
 import { Days, MonthWeeks, Months } from "./enums";
 import Utils from "./Utils";
@@ -30,7 +30,15 @@ export class CronEditorComponent
   implements OnInit, OnChanges, ControlValueAccessor
 {
   @Input() public disabled: boolean;
-  @Input() public options: CronOptions;
+
+  @Input({
+    transform: (value: CronOptions | null) => {
+      if (value) return value;
+
+      return defaultCronOptions;
+    },
+  })
+  public options: CronOptions;
 
   @Input() get cron(): string {
     return this.localCron;

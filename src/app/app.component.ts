@@ -14,9 +14,9 @@ export class AppComponent {
   public isCronDisabled = false;
   public cronOptions: CronOptions = {
     formInputClass: "form-control cron-editor-input",
-    formSelectClass: "form-control cron-editor-select",
+    formSelectClass: "form-select cron-editor-select",
     formRadioClass: "cron-editor-radio",
-    formCheckboxClass: "cron-editor-checkbox",
+    formCheckboxClass: "form-check-input cron-editor-checkbox",
 
     defaultTime: "10:00:00",
     use24HourTime: true,
